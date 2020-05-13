@@ -1,0 +1,40 @@
+<resources>
+    <fitContributions>
+        
+        <fitField id="1" displayInChart="false" displayInActivityLaps="true" displayInActivitySummary="false"
+        sortOrder = "2" precision="0"
+        dataLabel="@Strings.label_turn_hits"
+        unitLabel="@Strings.label_hits_units" />
+        
+        <fitField id="2" displayInChart="false" displayInActivityLaps="true" displayInActivitySummary="false"
+        sortOrder = "3" precision="0"
+        dataLabel="@Strings.label_turn_misses"
+        unitLabel="@Strings.label_misses_units" />
+        
+        <fitField id="3" displayInChart="false" displayInActivityLaps="true" displayInActivitySummary="false"
+        sortOrder = "4" precision="0"
+        dataLabel="@Strings.label_turn_shots"
+        unitLabel="@Strings.label_shots_units" />
+        
+        <fitField id="4" displayInChart="false" displayInActivityLaps="false" displayInActivitySummary="true"
+        sortOrder = "5" precision="0"
+        dataLabel="@Strings.label_total_hits"
+        unitLabel="@Strings.label_hits_units" />
+        
+        <fitField id="5" displayInChart="false" displayInActivityLaps="false" displayInActivitySummary="true"
+        sortOrder = "6" precision="0"
+        dataLabel="@Strings.label_total_misses"
+        unitLabel="@Strings.label_misses_units" />
+        
+        <fitField id="6" displayInChart="false" displayInActivityLaps="false" displayInActivitySummary="true"
+        sortOrder = "7" precision="0"
+        dataLabel="@Strings.label_total_shots"
+        unitLabel="@Strings.label_shots_units" />
+        
+        <fitField id="7" displayInChart="false" displayInActivityLaps="false" displayInActivitySummary="true"
+        sortOrder = "8" precision="2"
+        dataLabel="@Strings.label_hits_percentage"
+        unitLabel="@Strings.label_hits_percentage_units" />
+    
+    </fitContributions>
+</resources>

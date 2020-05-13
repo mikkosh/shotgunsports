@@ -1,0 +1,55 @@
+<resources>
+    <string id="AppName">Haulikkoammunta</string>
+    
+	<string id="label_turn_hits">Osui</string>
+	<string id="label_hits_units">osuma</string>
+	
+	<string id="label_turn_misses">Ohi</string>
+	<string id="label_misses_units">ohi</string>
+	
+	<string id="label_turn_shots">Laukaukset</string>
+	<string id="label_shots_units">laukausta</string>
+	
+	<string id="label_total_shots">Laukaukset yht.</string>
+	<string id="label_total_misses">Ohi yht.</string>
+	<string id="label_total_hits">Osumat yht.</string>
+	<string id="label_hits_percentage">Tarkkuus</string>
+	<string id="label_hits_percentage_units">%</string>
+	
+	<string id="label_hits_padded"> Osui </string>
+	<string id="label_misses_padded"> Ohi </string>
+	<string id="label_turn">Vuoro</string>
+	
+	<string id="game_freetraining_title">Vapaaharjoittelu</string>
+	<string id="game_freetraining_description">Ei laukaus- tai vuororajoituksia</string>  
+	<string id="game_bushskeet_title">Metsästyshaulikko</string>
+	<string id="game_bushskeet_description">Skeettiä, 8 vuoroa, ei tuplia</string>
+	<string id="game_trap_title">Trap</string>
+	<string id="game_trap_description">Normaali trap</string>
+	<string id="game_dbltrap_title">Kaksoistrap</string>
+	<string id="game_dbltrap_description">15 kaksoiskiekkoa</string>     
+	<string id="game_skeet_title">Skeet</string>
+	<string id="game_skeet_description">Normaali skeet</string>
+	
+	<string id="options_finishsave_title">Päätä kierros</string>
+	<string id="options_finishsave_description">Tallenna tulokset</string>
+	<string id="options_finishdiscard_title">Keskeytä kierros</string>
+	<string id="options_finishdiscard_description">Hylkää tulokset</string>    
+	<string id="options_continue_title">Takaisin</string>
+	<string id="options_continue_description">Jatka kierrosta</string>
+	
+	<string id="menu_about_application">Tietoja sovelluksesta</string>
+	
+	<string id="saving_turn_data">Vuoro päättyy... </string>
+	
+	<string id="result_title_turn">Vuoro</string>
+	<string id="result_title_totals">Yhteenveto</string>
+	
+	<string id="about_author">Shotgun Sports was made by Mikko Hämäläinen
+License: MIT License
+Contact: ConnectIQ store / Contact developer
+Attributions:
+Clay icon is based on "Broken clay target" by Olena Panasovska from thenounproject.com and licensed under Creative Commons CCBY</string>
+	
+	<string id="label_turn_shots_short">Lks</string>
+</resources>

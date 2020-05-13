@@ -1,0 +1,56 @@
+<resources>
+    <string id="AppName">Shotgun Sports</string>
+    
+	<string id="label_turn_hits">Hits</string>
+	<string id="label_hits_units">hits</string>
+	
+	<string id="label_turn_misses">Lost</string>
+	<string id="label_misses_units">lost</string>
+	
+	<string id="label_turn_shots">Shots</string>
+	<string id="label_shots_units">shots</string>
+	
+	<string id="label_total_shots">Total shots</string>
+	<string id="label_total_misses">Total lost</string>
+	<string id="label_total_hits">Total hits</string>
+	<string id="label_hits_percentage">Accuracy</string>
+	<string id="label_hits_percentage_units">%</string>
+	
+	<string id="label_hits_padded"> Hit </string>
+	<string id="label_misses_padded"> Lost </string>
+	<string id="label_turn">Turn</string>   
+	
+	<string id="game_freetraining_title">Free training</string>
+	<string id="game_freetraining_description">No round and shot limits</string>  
+	<string id="game_bushskeet_title">Hunting skeet</string>
+	<string id="game_bushskeet_description">Skeet, 8 turns, no doubles</string>
+	<string id="game_trap_title">Trap</string>
+	<string id="game_trap_description">Normal trap, 25 shots</string> 
+	<string id="game_dbltrap_title">Double Trap</string>
+	<string id="game_dbltrap_description">15 turns, doubles</string>     
+	<string id="game_skeet_title">Skeet</string>
+	<string id="game_skeet_description">Normal skeet</string>
+	
+	<string id="options_finishsave_title">Finish and save</string>
+	<string id="options_finishsave_description">End round and save data</string>
+	<string id="options_finishdiscard_title">Discard round</string>
+	<string id="options_finishdiscard_description">Quit without saving</string>    
+	<string id="options_continue_title">Back to game</string>
+	<string id="options_continue_description">Continue the round</string>   
+	
+	<string id="menu_about_application">About application</string>
+	
+	<string id="saving_turn_data">Ending turn... </string>
+	
+	<string id="result_title_turn">Turn</string>
+	<string id="result_title_totals">Totals</string>
+	
+	<string id="about_author">Shotgun Sports was made by Mikko Hämäläinen
+License: MIT License
+Contact: ConnectIQ store / Contact developer
+Attributions:
+Clay icon is based on "Broken clay target" by Olena Panasovska from thenounproject.com and licensed under Creative Commons CCBY</string>
+	
+	<string id="label_turn_shots_short">Sht</string>
+	
+</resources>
