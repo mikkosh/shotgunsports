@@ -22,7 +22,6 @@
 	<drawable id="decreaseSymbol"></drawable>
 	<drawable id="finishLapSymbol"></drawable>
 	<drawable id="nextItemSymbol"></drawable>
-	<drawable id="menuSymbol"></drawable>
 </layout>
 
 <drawable-list id="finishLapSymbol" x="111" y="92" width="20" height="20">
@@ -37,11 +36,7 @@
 <drawable-list id="nextItemSymbol" x="112" y="30" width="20" height="20">
 		<shape type="polygon" points="[[0,0],[0,16],[8,8],[0,0]]" color="Gfx.COLOR_LT_GRAY" />
 </drawable-list>
-<drawable-list id="menuSymbol" x="2" y="63" width="20" height="20">
-		<shape type="polygon" points="[[0,0],[0,2],[16,2],[16,0],[0,0]]" color="Gfx.COLOR_DK_GRAY" />
-		<shape type="polygon" points="[[0,5],[0,7],[16,7],[16,5],[0,5]]" color="Gfx.COLOR_DK_GRAY" />
-		<shape type="polygon" points="[[0,10],[0,12],[16,12],[16,10],[0,10]]" color="Gfx.COLOR_DK_GRAY" />
-</drawable-list>
+
 <layout id="ResultLayout">
 	<bitmap id="claytarget" filename="../resources/images/claytarget.png" x="70%" y="center" />
 	<label id="sportName" x="center" y="10%" font="Gfx.FONT_TINY" color="Gfx.COLOR_ORANGE" justification="Gfx.TEXT_JUSTIFY_CENTER" />

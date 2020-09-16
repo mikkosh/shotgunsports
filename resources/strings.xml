@@ -31,6 +31,8 @@
 	<string id="game_skeet_title">Skeet</string>
 	<string id="game_skeet_description">Normal skeet</string>
 	
+	<string id="options_nextround_title">Next round</string>
+	<string id="options_nextround_description">Go to next round</string>
 	<string id="options_finishsave_title">Finish and save</string>
 	<string id="options_finishsave_description">End round and save data</string>
 	<string id="options_finishdiscard_title">Discard round</string>
@@ -40,7 +42,6 @@
 	
 	<string id="menu_about_application">About application</string>
 	
-	<string id="saving_turn_data">Ending turn... </string>
 	
 	<string id="result_title_turn">Turn</string>
 	<string id="result_title_totals">Totals</string>

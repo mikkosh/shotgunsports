@@ -6,8 +6,28 @@ class InGameMenu extends WatchUi.Menu2 {
 		Menu2.initialize({:title=>"Options"});
 		populate();
 	}
+	
+	public function remindLastRound() {
+		setFocus(2);
+	}
 	private function populate() {
 		
+		addItem(
+			new WatchUi.MenuItem(
+			Rez.Strings.options_nextround_title,
+			Rez.Strings.options_nextround_description,
+			:NextRound,
+			{}
+			)
+		);
+		addItem(
+			new WatchUi.MenuItem(
+			Rez.Strings.options_continue_title,
+			Rez.Strings.options_continue_description,
+			:BackToGame,
+			{}
+			)
+		);
 		addItem(
 			new WatchUi.MenuItem(
 			Rez.Strings.options_finishsave_title,
@@ -25,14 +45,7 @@ class InGameMenu extends WatchUi.Menu2 {
 			{}
 			)
 		);
-		addItem(
-			new WatchUi.MenuItem(
-			Rez.Strings.options_continue_title,
-			Rez.Strings.options_continue_description,
-			:BackToGame,
-			{}
-			)
-		);
+		
 	}
 }
 
@@ -47,13 +60,17 @@ class InGameMenuInputDelegate extends WatchUi.Menu2InputDelegate {
 
     function onSelect(item) {
        
-        if(item.getId() == :EndSave) {
-        	model.endGame(true);
-        } else if(item.getId() == :EndDiscard) {
-        	model.endGame(false);
+        if(item.getId() == :NextRound) {
+        	model.nextRound();
+			WatchUi.popView(WatchUi.SLIDE_LEFT);
+			return true;
         } else if(item.getId() == :BackToGame) {
         	WatchUi.popView(WatchUi.SLIDE_LEFT);
         	return true;
+        } else if(item.getId() == :EndSave) {
+        	model.endGame(true);
+        } else if(item.getId() == :EndDiscard) {
+        	model.endGame(false);
         }
         var view = new ResultView(model, 0);
     	WatchUi.switchToView(view, new ResultInputDelegate(model), WatchUi.SLIDE_LEFT);

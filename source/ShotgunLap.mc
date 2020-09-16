@@ -31,7 +31,13 @@ class ShotgunLapInputDelegate extends WatchUi.BehaviorDelegate
     }
     
     public function onBack() {    
-    
+    	var igMenu = new InGameMenu();
+    	if(model.getLap() == model.getMaxRounds() && !lastLapReminderGiven) {
+    		lastLapReminderGiven = true;
+    		igMenu.remindLastRound();
+    	} 
+    	WatchUi.pushView(igMenu, new InGameMenuInputDelegate(model), WatchUi.SLIDE_IMMEDIATE);
+    	/*
     	if(model.getLap() == model.getMaxRounds() && !lastLapReminderGiven) {
     		lastLapReminderGiven = true;
     		WatchUi.pushView(new InGameMenu(), new InGameMenuInputDelegate(model), WatchUi.SLIDE_IMMEDIATE);
@@ -43,12 +49,14 @@ class ShotgunLapInputDelegate extends WatchUi.BehaviorDelegate
 	            WatchUi.SLIDE_RIGHT
 	        );
         }
+        */
         return true;
     }
-    
+    /*
     public function onMenu() {
     	WatchUi.pushView(new InGameMenu(), new InGameMenuInputDelegate(model), WatchUi.SLIDE_IMMEDIATE);
     }
+    */
 }
 
 class ShotgunLapView extends WatchUi.View {

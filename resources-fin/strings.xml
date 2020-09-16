@@ -31,6 +31,8 @@
 	<string id="game_skeet_title">Skeet</string>
 	<string id="game_skeet_description">Normaali skeet</string>
 	
+	<string id="options_nextround_title">Seuraava vuoro</string>
+	<string id="options_nextround_description">Siirry seuraavalle kivelle</string>
 	<string id="options_finishsave_title">Päätä kierros</string>
 	<string id="options_finishsave_description">Tallenna tulokset</string>
 	<string id="options_finishdiscard_title">Keskeytä kierros</string>
@@ -40,7 +42,6 @@
 	
 	<string id="menu_about_application">Tietoja sovelluksesta</string>
 	
-	<string id="saving_turn_data">Vuoro päättyy... </string>
 	
 	<string id="result_title_turn">Vuoro</string>
 	<string id="result_title_totals">Yhteenveto</string>
