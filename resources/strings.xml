@@ -46,11 +46,26 @@
 	<string id="result_title_turn">Turn</string>
 	<string id="result_title_totals">Totals</string>
 	
-	<string id="about_author">Shotgun Sports was made by Mikko Hämäläinen
+	<string id="about_author">
+Shotgun Sports 
+by 
+Mikko Hämäläinen
+
 License: MIT License
-Contact: ConnectIQ store / Contact developer
+
+Contact through
+ConnectIQ store
+
 Attributions:
-Clay icon is based on "Broken clay target" by Olena Panasovska from thenounproject.com and licensed under Creative Commons CCBY</string>
+Clay icon is based 
+on "Broken clay target" 
+by 
+Olena Panasovska 
+from thenounproject.com 
+and licensed 
+under 
+Creative Commons 
+CCBY</string>
 	
 	<string id="label_turn_shots_short">Sht</string>
 	

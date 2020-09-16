@@ -7,11 +7,6 @@ class AboutInputDelegate extends WatchUi.BehaviorDelegate
     public function initialize() {
         BehaviorDelegate.initialize();
     }
- 
-    public function onBack() {
-    	WatchUi.switchToView(new ActivityMenu(), new ActivityMenuInputDelegate(), WatchUi.SLIDE_IMMEDIATE);
-    }
-    
 }
 
 class AboutView extends WatchUi.View {
@@ -49,7 +44,7 @@ class AboutView extends WatchUi.View {
     		origY = container.locY;
 		}
     	container.setLocation(container.locX, (origY-scrollPos));
-    	if(scrollPos > container.height) {
+    	if(scrollPos > (container.height+10)) {
     		scrollPos = 0;
 		}
     	View.onUpdate( dc );

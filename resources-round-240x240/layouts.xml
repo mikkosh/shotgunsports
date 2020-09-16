@@ -70,6 +70,6 @@
 	
 </layout>
 <layout id="AboutLayout"> 
-	<text-area id="about_text" text="@Strings.about_author" x="10%" y="50%" width="80%" height="500" font="Gfx.FONT_XTINY" color="Gfx.COLOR_LT_GRAY" justification="Gfx.TEXT_JUSTIFY_LEFT" />
+	<label id="about_text" text="@Strings.about_author" x="50%" y="90%" font="Gfx.FONT_XTINY" color="Gfx.COLOR_LT_GRAY" justification="Gfx.TEXT_JUSTIFY_CENTER" />
 </layout>
 </resources>

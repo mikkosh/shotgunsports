@@ -23,8 +23,13 @@ class DataRecorder {
 	}
 	public function startRecording(sportName) {
 		if( Toybox has :ActivityRecording ) {
-    	
-        	session = ActivityRecording.createSession({:name=>sportName, :sport=>ActivityRecording.SPORT_SHOOTING});
+		
+			// devices with ciq < 3.0.10 don't have sport_shooting
+    		var sportId = ActivityRecording.SPORT_GENERIC;
+    		if(ActivityRecording has :SPORT_SHOOTING) {
+    			sportId = ActivityRecording.SPORT_SHOOTING;
+			}
+        	session = ActivityRecording.createSession({:name=>sportName, :sport=>sportId});
             
             hitsField = session.createField("Hits", FIELD_ID_HITS, FitContributor.DATA_TYPE_UINT16, { :mesgType=>FitContributor.MESG_TYPE_LAP, :units=>"H", :nativeNum=>FIT_NATIVE_MSG_LAP_PLAYER_SCORE});
             missesField = session.createField("Misses", FIELD_ID_MISSES, FitContributor.DATA_TYPE_UINT16, { :mesgType=>FitContributor.MESG_TYPE_LAP, :units=>"H" /*, :nativeNum=>FIT_NATIVE_MSG_LAP_PLAYER_SCORE */});
