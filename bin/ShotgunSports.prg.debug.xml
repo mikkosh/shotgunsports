@@ -55,7 +55,7 @@
         <entry filename="/Users/mkoh/eclipse-workspace/shotgunsports/source/ShotgunLap.mc" id="11" lineNum="116" pc="268436645" symbol="onUpdate"/>
         <entry filename="/Users/mkoh/eclipse-workspace/shotgunsports/source/ShotgunLap.mc" id="11" lineNum="118" pc="268436685" symbol="onUpdate"/>
         <entry filename="/Users/mkoh/eclipse-workspace/shotgunsports/source/ShotgunLap.mc" id="11" lineNum="119" pc="268436710" symbol="onUpdate"/>
-        <entry filename="/Users/mkoh/eclipse-workspace/shotgunsports/source/ShotgunLap.mc" id="11" lineNum="67" pc="268453091" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/mkoh/eclipse-workspace/shotgunsports/source/ShotgunLap.mc" id="11" lineNum="67" pc="268453096" symbol="&lt;init&gt;"/>
         <entry filename="/Users/mkoh/eclipse-workspace/shotgunsports/source/AboutView.mc" id="13" lineNum="7" pc="268436731" symbol="initialize"/>
         <entry filename="/Users/mkoh/eclipse-workspace/shotgunsports/source/AboutView.mc" id="13" lineNum="8" pc="268436735" symbol="initialize"/>
         <entry filename="/Users/mkoh/eclipse-workspace/shotgunsports/source/AboutView.mc" id="15" lineNum="18" pc="268436754" symbol="initialize"/>
@@ -330,7 +330,7 @@
         <entry filename="/Users/mkoh/eclipse-workspace/shotgunsports/source/Models.mc" id="92" lineNum="159" pc="268443704" symbol="logLapStats"/>
         <entry filename="/Users/mkoh/eclipse-workspace/shotgunsports/source/Models.mc" id="93" lineNum="162" pc="268443733" symbol="getGameStats"/>
         <entry filename="/Users/mkoh/eclipse-workspace/shotgunsports/source/Models.mc" id="93" lineNum="163" pc="268443737" symbol="getGameStats"/>
-        <entry filename="/Users/mkoh/eclipse-workspace/shotgunsports/source/Models.mc" id="93" lineNum="19" pc="268453124" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/mkoh/eclipse-workspace/shotgunsports/source/Models.mc" id="93" lineNum="19" pc="268453129" symbol="&lt;init&gt;"/>
         <entry filename="/Users/mkoh/eclipse-workspace/shotgunsports/source/Models.mc" id="95" lineNum="171" pc="268443747" symbol="initialize"/>
         <entry filename="/Users/mkoh/eclipse-workspace/shotgunsports/source/Models.mc" id="95" lineNum="172" pc="268443751" symbol="initialize"/>
         <entry filename="/Users/mkoh/eclipse-workspace/shotgunsports/source/Models.mc" id="95" lineNum="173" pc="268443771" symbol="initialize"/>
