@@ -34,6 +34,14 @@ class ActivityMenu extends WatchUi.Menu2 {
 		);
 		addItem(
 			new WatchUi.MenuItem(
+			Rez.Strings.game_amskeet_title,
+			Rez.Strings.game_amskeet_description,
+			:AmSkeetModel,
+			{}
+			)
+		);
+		addItem(
+			new WatchUi.MenuItem(
 			Rez.Strings.game_bushskeet_title,
 			Rez.Strings.game_bushskeet_description,
 			:BushSkeetModel,
@@ -81,6 +89,8 @@ class ActivityMenuInputDelegate extends WatchUi.Menu2InputDelegate {
         	model = new TrapModel(dataRecorder);
         } else if(item.getId() == :SkeetModel) {
         	model = new SkeetModel(dataRecorder);
+        } else if(item.getId() == :AmSkeetModel) {
+        	model = new AmSkeetModel(dataRecorder);
         } else if(item.getId() == :DoubleTrapModel) {
         	model = new DoubleTrapModel(dataRecorder);
         }

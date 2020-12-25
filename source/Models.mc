@@ -304,7 +304,7 @@ class DoubleTrapModel extends ShotgunsportModel {
 		}
 	}
 }
-// model for simple skeet (bush skeet rules)
+// model for skeet (simple skeet rules)
 class SkeetModel extends ShotgunsportModel {
 
 
@@ -343,6 +343,59 @@ class SkeetModel extends ShotgunsportModel {
 	
 	public function getMaxRounds(){
 		return 9;
+	}
+	
+	public function addHit() {
+		ShotgunsportModel.addHit();
+		setMisses(getRoundMaxShots()-getHits());
+		if(getMisses() < 0) {
+			setMisses(0);
+		}
+	}
+	public function removeHit() {
+		ShotgunsportModel.removeHit();
+		setMisses(getRoundMaxShots()-getHits());
+		if(getMisses() < 0) {
+			setMisses(0);
+		}
+	}
+}
+
+// model for American skeet (American skeet rules)
+class AmSkeetModel extends ShotgunsportModel {
+
+
+	public function initialize(drec) {
+		ShotgunsportModel.initialize(drec);
+		setSportName(WatchUi.loadResource(Rez.Strings.game_amskeet_title));
+		setMisses(getRoundMaxShots()-getHits());
+	}
+	
+	public function nextLap() {
+		ShotgunsportModel.nextLap();
+		setMisses(getRoundMaxShots()-getHits());
+		if(getMisses() < 0) {
+			setMisses(0);
+		}
+	}
+	
+	public function getRoundMaxShots() {
+		var lap = getLap();
+		if(lap > 2 && lap < 6) { 
+			return 2;
+		} else if(lap == 8) {
+			return 2;
+		} else if(lap == 1 || lap == 2) {
+			return 4;
+		} else if(lap == 6 || lap == 7) {
+			return 4;
+		} else {
+			return 0;
+		}
+	}
+	
+	public function getMaxRounds(){
+		return 8;
 	}
 	
 	public function addHit() {

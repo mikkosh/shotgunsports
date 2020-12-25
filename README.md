@@ -1,7 +1,7 @@
 # shotgunsports
 Shotgun Sports app for Garmin ConnectIQ
 
-Shotgun Sports is an app for tracking Skeet, Trap and other shotgun sports activities. It currently supports free training, Trap, Skeet, Nordic Trap and Hunting skeet (a Finnish skeet variant with no doubles).
+Shotgun Sports is an app for tracking Skeet, Trap and other shotgun sports activities. It currently supports free training, Trap, Skeet, American Skeet, Nordic Trap and Hunting skeet (a Finnish skeet variant with no doubles).
 
 Usage:
 1. Select the sport variant  (Trap, Skeet etc.) from the menu
