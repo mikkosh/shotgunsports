@@ -30,7 +30,7 @@
 	<string id="game_dbltrap_description">15 kaksoiskiekkoa</string>     
 	<string id="game_skeet_title">Skeet</string>
 	<string id="game_skeet_description">Normaali skeet</string>
-	<string id="game_amskeet_title">American skeet</string>
+	<string id="game_amskeet_title">Amerikkalainen skeet</string>
 	<string id="game_amskeet_description">24+1</string>
 	
 	<string id="options_nextround_title">Seuraava vuoro</string>
