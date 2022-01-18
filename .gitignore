@@ -1,2 +1,4 @@
 bin/ShotgunSports.prg
 bin/ShotgunSports.prg.debug.xml
+.DS_Store
+.vscode
