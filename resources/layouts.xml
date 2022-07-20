@@ -101,5 +101,14 @@
 </layout>
 <layout id="AboutLayout"> 
 	<label id="about_text" text="@Strings.about_author" x="50%" y="90%" font="Gfx.FONT_XTINY" color="Gfx.COLOR_LT_GRAY" justification="Gfx.TEXT_JUSTIFY_CENTER" />
+	<drawable id="InetButton" class="ArcButton">
+		<param name="position">@ArcButton.POSITION_SELECT_BUTTON</param>
+		<param name="width">50</param>
+		<param name="height">50</param>
+		<param name="behavior">:onSelect</param>
+		<param name="stateDefault">@Drawables.ArcBtnInternet</param>
+		<param name="stateHighlighted">@Drawables.ArcBtnInternet</param>
+		<param name="color">@Graphics.COLOR_BLACK</param>
+	</drawable>
 </layout>
 </resources>

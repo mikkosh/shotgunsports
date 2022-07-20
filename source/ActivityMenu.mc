@@ -76,7 +76,8 @@ class ActivityMenuInputDelegate extends WatchUi.Menu2InputDelegate {
         System.println(item.getId());
         
         if(item.getId() == :AboutApp) {
-        	WatchUi.pushView(new AboutView(), new AboutInputDelegate(),WatchUi.SLIDE_LEFT);
+			var v = new AboutView();
+        	WatchUi.pushView(v, new AboutInputDelegate(v),WatchUi.SLIDE_LEFT);
         	return true;
         }
         
