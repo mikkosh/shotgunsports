@@ -18,7 +18,7 @@ class ShotgunsportModel
 	// key-val for storing game statistics
 	private var gameStats = {};
 	
-	//private var hasEnded = false;
+	private var hasEnded = false;
 	
 	private var sportName = "";
 	
@@ -120,7 +120,7 @@ class ShotgunsportModel
 		return lap;
 	}
 	public function startGame() {
-		//hasEnded = false;
+		hasEnded = false;
 		dataRecorder.startRecording(sportName);
 	}
 	//@param saveData boolean should the data be saved (or discarded on false)
@@ -128,9 +128,13 @@ class ShotgunsportModel
 		dataRecorder.recordLapData(getHits(), getMisses());
 		logLapStats(lap, hits, misses);
 		dataRecorder.stopRecording(saveData);
-		//hasEnded = true;
+		hasEnded = true;
 	}
 	
+	public function hasGameEnded() {
+		return hasEnded;
+	}
+
 	// @todo: define whether returns a number (like child classes) or a string
 	public function getRoundMaxShots() {
 		return 0;

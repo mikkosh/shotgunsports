@@ -21,7 +21,7 @@
 	<string id="label_turn">Turn</string>   
 	
 	<string id="game_freetraining_title">Free training</string>
-	<string id="game_freetraining_description">No round and shot limits</string>  
+	<string id="game_freetraining_description">No shot or station limits</string>  
 	<string id="game_bushskeet_title">Hunting skeet</string>
 	<string id="game_bushskeet_description">Skeet, 8 turns, no doubles</string>
 	<string id="game_trap_title">Trap</string>
@@ -33,12 +33,14 @@
 	<string id="game_amskeet_title">American skeet</string>
 	<string id="game_amskeet_description">1 miss repeat/25 LH8</string>
 	
-	<string id="options_nextround_title">Next round</string>
-	<string id="options_nextround_description">Go to next round</string>
-	<string id="options_finishsave_title">Finish and save</string>
-	<string id="options_finishsave_description">End round and save data</string>
-	<string id="options_finishdiscard_title">Discard round</string>
-	<string id="options_finishdiscard_description">Quit without saving</string>    
+	<string id="options_nextround_title">Next station</string>
+	<string id="options_nextround_description">Go to next station</string>
+	
+
+	<string id="options_finish_title">Quit</string>
+	<string id="options_finish_description">Finish the round</string>
+	<string id="endgame_confirmation_shouldsave">Save round data</string>
+
 	<string id="options_continue_title">Back to game</string>
 	<string id="options_continue_description">Continue the round</string>   
 	

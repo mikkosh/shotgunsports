@@ -59,7 +59,7 @@ class ShotgunLapInputDelegate extends WatchUi.BehaviorDelegate
 	// open the menu that the user can access to go to next round
     public function onNextRoundMenu() {    
 		System.println("next round menu");
-    	var igMenu = new InGameMenu();
+    	var igMenu = new InGameMenu(model);
     	if(model.getLap() == model.getMaxRounds() && !lastLapReminderGiven) {
     		lastLapReminderGiven = true;
     		igMenu.remindLastRound();
