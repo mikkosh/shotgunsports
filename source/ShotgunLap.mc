@@ -1,6 +1,7 @@
 using Toybox.WatchUi;
 using Toybox.Attention;
 
+
 class ShotgunLapInputDelegate extends WatchUi.BehaviorDelegate
 {
 	private var model;
@@ -10,6 +11,7 @@ class ShotgunLapInputDelegate extends WatchUi.BehaviorDelegate
         BehaviorDelegate.initialize();
         model = m;
         lastLapReminderGiven = false;
+
     }
 
     public function onSelect() {
@@ -29,34 +31,44 @@ class ShotgunLapInputDelegate extends WatchUi.BehaviorDelegate
     	WatchUi.requestUpdate();
     	return true;
     }
-    
-    public function onBack() {    
+
+	/*
+		What happens below is:
+		I am grabbing esc button and right (and left) swipes so they would not 
+		trigger onBack behavior and execute onNextRoundMenu instead when esc-button
+		is pressed. Swiping sideways should not do anything.
+	*/
+	// handle esc button and open menu with it
+	public function onKey(keyEvent) {
+		if(keyEvent.getKey() == KEY_ESC) {
+			System.println("got esc");
+			onNextRoundMenu();
+			return true;
+		}
+		return false;
+	}
+	// prevent left and right swipes, allow up/down
+	public function onSwipe(swp) {
+		if(swp.getDirection() == SWIPE_RIGHT ||swp.getDirection() == SWIPE_LEFT) {
+			return true;
+		}
+		return false;
+	}
+
+
+	// open the menu that the user can access to go to next round
+    public function onNextRoundMenu() {    
+		System.println("next round menu");
     	var igMenu = new InGameMenu();
     	if(model.getLap() == model.getMaxRounds() && !lastLapReminderGiven) {
     		lastLapReminderGiven = true;
     		igMenu.remindLastRound();
     	} 
     	WatchUi.pushView(igMenu, new InGameMenuInputDelegate(model), WatchUi.SLIDE_IMMEDIATE);
-    	/*
-    	if(model.getLap() == model.getMaxRounds() && !lastLapReminderGiven) {
-    		lastLapReminderGiven = true;
-    		WatchUi.pushView(new InGameMenu(), new InGameMenuInputDelegate(model), WatchUi.SLIDE_IMMEDIATE);
-    	} else {
-	    	var progressBar = new LapSaveProgressBar();
-	        WatchUi.pushView(
-	            progressBar,
-	            new LapSaveProgresssDelegate(progressBar, model),
-	            WatchUi.SLIDE_RIGHT
-	        );
-        }
-        */
+    	
         return true;
     }
-    /*
-    public function onMenu() {
-    	WatchUi.pushView(new InGameMenu(), new InGameMenuInputDelegate(model), WatchUi.SLIDE_IMMEDIATE);
-    }
-    */
+    
 }
 
 class ShotgunLapView extends WatchUi.View {

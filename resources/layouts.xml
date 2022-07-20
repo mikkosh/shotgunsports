@@ -1,8 +1,4 @@
 <resources>
-<layout id="SplashLayout">
-	<bitmap id="claytarget" filename="images/claytarget.png" x="center" y="center" />
-	<!-- label text="@Strings.AppName" x="center" y="center" font="Gfx.FONT_LARGE" color="Gfx.COLOR_LT_GRAY" justification="Gfx.TEXT_JUSTIFY_CENTER" / -->
-</layout>
 <layout id="LapInputLayout">
 	<label id="lap" text="1" x="32%" y="8%" font="Gfx.FONT_NUMBER_MILD" color="Gfx.COLOR_LT_GRAY" justification="Gfx.TEXT_JUSTIFY_RIGHT" />
 	<label id="lapLabel" text="@Strings.label_turn" x="32%" y="25%" font="Gfx.FONT_XTINY" color="Gfx.COLOR_DK_GRAY" justification="Gfx.TEXT_JUSTIFY_LEFT" />
@@ -17,26 +13,44 @@
 	<label id="hits" text="0" x="32%" y="center" font="Gfx.FONT_NUMBER_THAI_HOT" color="Gfx.COLOR_ORANGE" justification="Gfx.TEXT_JUSTIFY_CENTER" />
 	<label id="misses" text="0" x="68%" y="center" font="Gfx.FONT_NUMBER_THAI_HOT" color="Gfx.COLOR_ORANGE" justification="Gfx.TEXT_JUSTIFY_CENTER" />
 	
+
 	
-	<drawable id="increaseSymbol"></drawable>
-	<drawable id="decreaseSymbol"></drawable>
-	<drawable id="finishLapSymbol"></drawable>
-	<drawable id="nextItemSymbol"></drawable>
-	
+	<drawable id="finishLapSymbol" class="ArcButton">
+		<param name="position">@ArcButton.POSITION_ESC_BUTTON</param>
+		<param name="width">50</param>
+		<param name="height">50</param>
+		<param name="behavior">:onNextRoundMenu</param>
+		<param name="stateDefault">@Drawables.ArcBtnCheckmark</param>
+		<param name="stateHighlighted">@Drawables.ArcBtnCheckmark</param>
+	</drawable>
+	<drawable id="nextItemSymbol" class="ArcButton">
+		<param name="position">@ArcButton.POSITION_SELECT_BUTTON</param>
+		<param name="width">50</param>
+		<param name="height">50</param>
+		<param name="behavior">:onSelect</param>
+		<param name="stateDefault">@Drawables.ArcBtnRight</param>
+		<param name="stateHighlighted">@Drawables.ArcBtnRight</param>
+	</drawable>
+	<drawable id="increaseSymbol" class="ArcButton">
+		<param name="position">@ArcButton.POSITION_UP_BUTTON</param>
+		<param name="width">50</param>
+		<param name="height">50</param>
+		<param name="behavior">:onPreviousPage</param>
+		<param name="stateDefault">@Drawables.ArcBtnUp</param>
+		<param name="stateHighlighted">@Drawables.ArcBtnUp</param>
+	</drawable>
+	<drawable id="decreaseSymbol" class="ArcButton">
+		<param name="position">@ArcButton.POSITION_DOWN_BUTTON</param>
+		<param name="width">50</param>
+		<param name="height">50</param>
+		<param name="behavior">:onNextPage</param>
+		<param name="stateDefault">@Drawables.ArcBtnDown</param>
+		<param name="stateHighlighted">@Drawables.ArcBtnDown</param>
+	</drawable>
+
 </layout>
 
-<drawable-list id="finishLapSymbol" x="120" y="100" width="20" height="20">
-		<shape type="polygon" points="[[0,4],[4,10],[7,10],[18,-1],[16,-3],[6,7],[2,2],[0,4]]" color="Gfx.COLOR_DK_GREEN" />
-</drawable-list>
-<drawable-list id="increaseSymbol" x="3" y="67" width="20" height="20">
-		<shape type="polygon" points="[[8,0],[0,8],[16,8],[8,0]]" color="Gfx.COLOR_LT_GRAY" />
-</drawable-list>
-<drawable-list id="decreaseSymbol" x="13" y="100" width="20" height="20">
-		<shape type="polygon" points="[[8,8],[0,0],[16,0],[8,8]]" color="Gfx.COLOR_LT_GRAY" />
-</drawable-list>
-<drawable-list id="nextItemSymbol" x="125" y="35" width="20" height="20">
-		<shape type="polygon" points="[[0,0],[0,16],[8,8],[0,0]]" color="Gfx.COLOR_LT_GRAY" />
-</drawable-list>
+
 
 <layout id="ResultLayout">
 	<bitmap id="claytarget" filename="images/claytarget.png" x="70%" y="center" />
