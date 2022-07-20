@@ -7,8 +7,8 @@
 	<label id="shots" text="--" x="68%" y="8%" font="Gfx.FONT_NUMBER_MILD" color="Gfx.COLOR_LT_GRAY" justification="Gfx.TEXT_JUSTIFY_CENTER" />
 	<label id="shotsLabel" text="@Strings.label_turn_shots" x="68%" y="25%" font="Gfx.FONT_XTINY" color="Gfx.COLOR_DK_GRAY" justification="Gfx.TEXT_JUSTIFY_CENTER" />
 	
-	<label id="hitsLabel" text="@Strings.label_hits_padded" x="32%" y="170" font="Gfx.FONT_XTINY" color="Gfx.COLOR_LT_GRAY" justification="Gfx.TEXT_JUSTIFY_CENTER" />
-	<label id="missesLabel" text="@Strings.label_misses_padded" x="68%" y="170" font="Gfx.FONT_XTINY" color="Gfx.COLOR_LT_GRAY" justification="Gfx.TEXT_JUSTIFY_CENTER" />
+	<label id="hitsLabel" text="@Strings.label_hits_padded" x="32%" y="65%" font="Gfx.FONT_XTINY" color="Gfx.COLOR_LT_GRAY" justification="Gfx.TEXT_JUSTIFY_CENTER" />
+	<label id="missesLabel" text="@Strings.label_misses_padded" x="68%" y="65%" font="Gfx.FONT_XTINY" color="Gfx.COLOR_LT_GRAY" justification="Gfx.TEXT_JUSTIFY_CENTER" />
 	
 	<label id="hits" text="0" x="32%" y="center" font="Gfx.FONT_NUMBER_THAI_HOT" color="Gfx.COLOR_ORANGE" justification="Gfx.TEXT_JUSTIFY_CENTER" />
 	<label id="misses" text="0" x="68%" y="center" font="Gfx.FONT_NUMBER_THAI_HOT" color="Gfx.COLOR_ORANGE" justification="Gfx.TEXT_JUSTIFY_CENTER" />
@@ -71,8 +71,8 @@
 	<bitmap id="claytarget" filename="images/claytarget.png" x="70%" y="center" />
 	<label id="sportName" x="center" y="10%" font="Gfx.FONT_TINY" color="Gfx.COLOR_ORANGE" justification="Gfx.TEXT_JUSTIFY_CENTER" />
 	<label id="dataTitle" x="center" y="20%" font="Gfx.FONT_TINY" color="Gfx.COLOR_LT_GRAY" justification="Gfx.TEXT_JUSTIFY_CENTER" />
-	<label id="hitpercent" x="center" y="25%" font="Gfx.FONT_NUMBER_THAI_HOT" color="Gfx.COLOR_ORANGE" justification="Gfx.TEXT_JUSTIFY_CENTER" />
-	<label text="@Strings.label_hits_percentage" id="hitpercentLabel" x="center" y="59%" font="Gfx.FONT_XTINY" color="Gfx.COLOR_LT_GRAY" justification="Gfx.TEXT_JUSTIFY_CENTER" />
+	<label id="hitpercent" x="center" y="33%" font="Gfx.FONT_NUMBER_HOT" color="Gfx.COLOR_ORANGE" justification="Gfx.TEXT_JUSTIFY_CENTER" />
+	<!-- label text="@Strings.label_hits_percentage" id="hitpercentLabel" x="center" y="59%" font="Gfx.FONT_XTINY" color="Gfx.COLOR_LT_GRAY" justification="Gfx.TEXT_JUSTIFY_CENTER" / -->
 	
 	<label id="hits" x="25%" y="65%" font="Gfx.FONT_MEDIUM" color="Gfx.COLOR_WHITE" justification="Gfx.TEXT_JUSTIFY_CENTER" />
 	<label id="misses" x="50%" y="65%" font="Gfx.FONT_MEDIUM" color="Gfx.COLOR_WHITE" justification="Gfx.TEXT_JUSTIFY_CENTER" />
