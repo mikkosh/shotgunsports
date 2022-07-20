@@ -4,6 +4,7 @@
     <bitmap id="ArcBtnRight" filename="images/arcbtn-right.png" />
     <bitmap id="ArcBtnUp" filename="images/arcbtn-up.png" />
     <bitmap id="ArcBtnDown" filename="images/arcbtn-down.png" />
+    <bitmap id="ArcBtnCross" filename="images/arcbtn-cross.png" />
     <bitmap id="splash_screen" filename="images/claytarget.png" x="0" y="0" />
 
 </drawables>

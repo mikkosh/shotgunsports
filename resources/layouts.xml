@@ -66,6 +66,14 @@
 	<label id="misses" x="50%" y="50%" font="Gfx.FONT_MEDIUM" color="Gfx.COLOR_WHITE" justification="Gfx.TEXT_JUSTIFY_LEFT|Gfx.TEXT_JUSTIFY_VCENTER" />
 	<label id="shots" x="50%" y="65%" font="Gfx.FONT_MEDIUM" color="Gfx.COLOR_WHITE" justification="Gfx.TEXT_JUSTIFY_LEFT|Gfx.TEXT_JUSTIFY_VCENTER" />
 	<label id="hitpercent" x="50%" y="80%" font="Gfx.FONT_MEDIUM" color="Gfx.COLOR_WHITE" justification="Gfx.TEXT_JUSTIFY_LEFT|Gfx.TEXT_JUSTIFY_VCENTER" />
+	<drawable id="finishLapSymbol" class="ArcButton">
+		<param name="position">@ArcButton.POSITION_ESC_BUTTON</param>
+		<param name="width">50</param>
+		<param name="height">50</param>
+		<param name="behavior">:onBack</param>
+		<param name="stateDefault">@Drawables.ArcBtnCheckmark</param>
+		<param name="stateHighlighted">@Drawables.ArcBtnCheckmark</param>
+	</drawable>
 </layout>
 <layout id="ResultToltalsLayout">
 	<bitmap id="claytarget" filename="images/claytarget.png" x="70%" y="center" />
@@ -82,7 +90,14 @@
 	<label text="@Strings.label_turn_hits" id="hitsLabel" x="25%" y="80%" font="Gfx.FONT_XTINY" color="Gfx.COLOR_LT_GRAY" justification="Gfx.TEXT_JUSTIFY_CENTER" />
 	<label text="@Strings.label_turn_misses" id="missesLabel" x="50%" y="80%" font="Gfx.FONT_XTINY" color="Gfx.COLOR_LT_GRAY" justification="Gfx.TEXT_JUSTIFY_CENTER" />
 	<label text="@Strings.label_turn_shots_short" id="shotsLabel" x="75%" y="80%" font="Gfx.FONT_XTINY" color="Gfx.COLOR_LT_GRAY" justification="Gfx.TEXT_JUSTIFY_CENTER" />
-	
+	<drawable id="finishLapSymbol" class="ArcButton">
+		<param name="position">@ArcButton.POSITION_ESC_BUTTON</param>
+		<param name="width">50</param>
+		<param name="height">50</param>
+		<param name="behavior">:onBack</param>
+		<param name="stateDefault">@Drawables.ArcBtnCheckmark</param>
+		<param name="stateHighlighted">@Drawables.ArcBtnCheckmark</param>
+	</drawable>
 </layout>
 <layout id="AboutLayout"> 
 	<label id="about_text" text="@Strings.about_author" x="50%" y="90%" font="Gfx.FONT_XTINY" color="Gfx.COLOR_LT_GRAY" justification="Gfx.TEXT_JUSTIFY_CENTER" />
