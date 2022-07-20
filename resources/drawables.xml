@@ -1,10 +1,5 @@
 <drawables>
     <bitmap id="LauncherIcon" filename="images/icon.png" />
-    <!--
-    <bitmap id="ArcBtnMenu" filename="arcbtn-menu.png" />  
-   	
-    <bitmap id="ArcBtnInternet" filename="arcbtn-internet.png" />
--->
     <bitmap id="ArcBtnCheckmark" filename="images/arcbtn-checkmark.png" />
     <bitmap id="ArcBtnRight" filename="images/arcbtn-right.png" />
     <bitmap id="ArcBtnUp" filename="images/arcbtn-up.png" />
