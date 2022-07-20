@@ -37,7 +37,7 @@ class SplashScreenView extends WatchUi.View {
 	public function timerCallback() as Void {
 		timer.stop();
 		timer = null;
-		WatchUi.switchToView(new ActivityMenu(), new ActivityMenuInputDelegate(), WatchUi.SLIDE_IMMEDIATE);
+		WatchUi.pushView(new ActivityMenu(), new ActivityMenuInputDelegate(), WatchUi.SLIDE_IMMEDIATE);
 	}
 	public function onUpdate(dc) {
 		dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
