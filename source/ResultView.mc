@@ -84,7 +84,7 @@ class ResultView extends WatchUi.View {
     private function renderPage(dc) {
     	
     	var s;
-    	var keys = stats.keys();
+    	//var keys = stats.keys();
     	var title = "";
     	
     	if(stats.hasKey(page)){

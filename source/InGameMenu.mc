@@ -1,5 +1,5 @@
+import Toybox.Lang;
 using Toybox.WatchUi;
-
 using Toybox.Attention;
 
 class InGameMenu extends WatchUi.Menu2 {
