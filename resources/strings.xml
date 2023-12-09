@@ -32,6 +32,8 @@
 	<string id="game_skeet_description">Normal skeet</string>
 	<string id="game_amskeet_title">American skeet</string>
 	<string id="game_amskeet_description">1 miss repeat/25 LH8</string>
+	<string id="game_5stand_title">5-stand</string>
+	<string id="game_5stand_description">Five stands, five clays per stand</string>
 	
 	<string id="options_nextround_title">Next station</string>
 	<string id="options_nextround_description">Go to next station</string>

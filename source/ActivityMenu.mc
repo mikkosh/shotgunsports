@@ -58,6 +58,14 @@ class ActivityMenu extends WatchUi.Menu2 {
 		);
 		addItem(
 			new WatchUi.MenuItem(
+			Rez.Strings.game_5stand_title,
+			Rez.Strings.game_5stand_description,
+			:FiveStandModel,
+			{}
+			)
+		);
+		addItem(
+			new WatchUi.MenuItem(
 			Rez.Strings.menu_about_application,
 			null,
 			:AboutApp,
@@ -94,6 +102,8 @@ class ActivityMenuInputDelegate extends WatchUi.Menu2InputDelegate {
         	model = new AmSkeetModel(dataRecorder);
         } else if(item.getId() == :DoubleTrapModel) {
         	model = new DoubleTrapModel(dataRecorder);
+        } else if(item.getId() == :FiveStandModel) {
+        	model = new FiveStandModel(dataRecorder);
         }
         
     	model.startGame();

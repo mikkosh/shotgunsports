@@ -417,3 +417,48 @@ class AmSkeetModel extends ShotgunsportModel {
 		}
 	}
 }
+// model for 5 stand trap
+class FiveStandModel extends ShotgunsportModel {
+
+	
+	public function initialize(drec) {
+		ShotgunsportModel.initialize(drec);
+		setSportName(WatchUi.loadResource(Rez.Strings.game_5stand_title));
+		setMisses(getRoundMaxShots()-getHits());
+	}
+	
+	public function nextLap() {
+		ShotgunsportModel.nextLap();
+		setMisses(getRoundMaxShots()-getHits());
+		if(getMisses()<0) {
+			setMisses(0);
+		}
+	}
+	
+	public function getRoundMaxShots() {
+		if(getLap() < 6) {
+			return 5;
+		} else {
+			return 0;
+		}
+	}
+	
+	public function getMaxRounds(){
+		return 5;
+	}
+	
+	public function addHit() {
+		ShotgunsportModel.addHit();
+		setMisses(getRoundMaxShots()-getHits());
+		if(getMisses() < 0) {
+			setMisses(0);
+		}
+	}
+	public function removeHit() {
+		ShotgunsportModel.removeHit();
+		setMisses(getRoundMaxShots()-getHits());
+		if(getMisses() < 0) {
+			setMisses(0);
+		}
+	}
+}
